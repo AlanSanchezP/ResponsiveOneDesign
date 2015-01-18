@@ -1,0 +1,238 @@
+/* Diseño creado por Alan Sánchez      http://github.com/AlanSanchezP/      */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
+
+body{
+	background: #ededed;
+	font-family: "Open Sans";
+	margin: 0;
+	text-align: center;
+}
+
+*{
+	box-sizing: border-box !important;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	margin: 0;
+}
+
+#pagina{
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	width: 90%;
+}
+
+header{
+	background-image: url("portada.jpg");
+	background-size: 100% auto!important;
+	background-position: 50% !important;
+	background-repeat: no-repeat !important;
+	display:  inline-block;
+	height: 250px;
+	width: 90%;
+}
+
+nav{
+	background: #355F98;
+	color: white;
+	display:  inline-block;
+	height: 50px;
+	overflow-x: auto !important;
+	overflow-y: hidden !important;
+	padding-top: 4px;
+	text-align: left;
+	width: 90%;
+	white-space: nowrap;
+}
+nav ul{
+	display: inline-block;
+	margin-left: -37px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 0;
+}
+
+nav ul li a{
+	border-color: white;
+	border-style: solid;
+	border-width: 0px 0px 0px 0px;
+	color: white;
+	display: inline-block;
+	font-size: 18px;
+	height: 42px;
+	line-height: 44px;
+	margin-left: 6px;
+	padding: 0 12px;
+}
+
+nav ul li a:hover{
+	border-width: 0px 0px 2px 0px;
+}
+
+#cajas{
+	color: #444;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 5px;
+	width: 300px;
+}
+
+.titulo-caja{
+	background: #08968b;
+	color: white;
+	font-size: 20px;
+	margin: 0;
+	padding: 10px 4px;
+	text-align: center;
+	width: 100%;
+}
+
+.contenido-caja{
+	background: white;
+	padding: 15px;
+	text-align: justify;
+	width: 100%;
+}
+
+.contenido-caja p{
+	margin: 0;
+}
+
+.contenido-caja ul{
+	margin-left: -20px;
+}
+
+.contenido-caja ul li{
+	display: block;
+}
+
+.contenido-caja ul li a{
+	color: #22508e;
+}
+
+.contenido-caja ul li a:hover{
+	color: #08968b;
+}
+
+#contenido{
+	background: white;
+	color: #333;
+	display: inline-block;
+	font-weight: 600;
+	left: 305px;
+	padding: 15px 30px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+
+#contenido h1, #contenido h2, #contenido h3, #contenido h4{
+	color: #08968b;
+}
+#contenido h1{
+	font-size: 31px;
+}
+#contenido h2{
+	font-size: 27px;
+}
+#contenido h3{
+	font-size: 23px;
+}
+#contenido h4{
+	font-size: 19px;
+}
+
+footer{
+	background: #333;
+	color: white;
+	font-size: 13px;
+	padding: 15px;
+	position: relative;
+	width: 300px;
+}
+
+footer a{
+	color: #4f8cde;
+}
+
+*[type="button"], *[type="submit"], button{
+	background: #355F98;
+}
+*[type="reset"]{
+	background: #D53939;
+}
+
+form{
+	text-align: center;
+}
+
+input,textarea,button{
+	display: block;
+	margin: 0 auto;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], input[type="range"], input[type="email"], textarea{
+	border: 1px solid #777;
+	color: #333;
+	font-family: "Open Sans";
+	font-size: 16px;
+	padding: 10px 6px;
+	resize: none;
+	width: 350px !important;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button{
+	border: none;
+	color: white;
+	cursor: hand;
+	cursor: pointer;
+	font-family: "Open Sans";
+	font-size: 18px;
+	padding: 10px 30px;
+}
+
+@media screen and (max-width: 800px){
+	header, nav, #pagina{
+		width: 100%;
+	}
+	#contenido{
+		left: 0;
+		position: relative;
+		right: 0;
+	}
+	nav{
+		position: fixed;
+		top: 0;
+		z-index: 3;
+	}
+	header{
+		position: relative;
+		top: 50px;
+	}
+	#cajas{
+		margin-top: 10px;
+		position: relative;
+		text-align: center;
+		width: 100%;
+	}
+	footer{
+		width: 100%;
+	}
+	.caja{
+		display: inline-block;
+		vertical-align: top;
+		width: 49%;
+	}
+}
+@media screen and (max-width: 480px){
+	.caja{
+		width: 100%;
+	}
+}
